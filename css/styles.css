@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1,
+.container {
+  margin: auto;
+}
+h1 {
+  color: rgb(75, 79, 100);
+}
+.container {
+  background: #2d2c2c;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  /* height: 80%; */
+  width: 85%;
+  max-width: 1100px;
+  padding: 15px;
+}
+.container div {
+  /* background: rgb(141, 204, 206);
+  border-radius: 10px; */
+}
+
+/* /////////////////////////
+/* WRITE YOUR CODE BELOW! */
+/* ////////////////////// */
+
+/* we use 1fr so that each element sizes to fit inside the container evenly and the minmiax value for
+responsive columns */
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
