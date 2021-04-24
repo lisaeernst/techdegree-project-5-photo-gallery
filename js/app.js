@@ -1,4 +1,4 @@
-baguetteBox.run('.gallery');
+baguetteBox.run('.container');
 
-const baguetteBox = require('js/baguettebox.min.js');
+const search = new Filter('search', 'data-caption');
 
