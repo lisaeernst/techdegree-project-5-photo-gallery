@@ -26,7 +26,16 @@ h1 {
   max-width: 1100px;
   padding: 15px;
 }
-.container div {
+/* .container div {
+
+} */
+
+header {
+  height: 150px;
+  background-color: yellow;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
 }
 
 /* /////////////////////////
@@ -40,4 +49,24 @@ responsive columns */
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  /*  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer"; */
 }
+/* 
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+ */
