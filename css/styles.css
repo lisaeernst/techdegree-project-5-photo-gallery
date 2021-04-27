@@ -31,13 +31,14 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 .container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   background: #ffffff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  /* width: 85%; */
   width: 75%;
   max-width: 1100px;
   padding: 15px;
-
   margin-top: 20px;
 }
 .wrapperdiv {
@@ -87,12 +88,6 @@ footer p {
 
 /* we use 1fr so that each element sizes to fit inside the container evenly and the minmiax value for
 responsive columns */
-
-.container {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
 
 .gallery-img {
 }
