@@ -85,9 +85,3 @@ footer p {
 /* /////////////////////////
 /* WRITE YOUR CODE BELOW! */
 /* ////////////////////// */
-
-/* we use 1fr so that each element sizes to fit inside the container evenly and the minmiax value for
-responsive columns */
-
-.gallery-img {
-}
