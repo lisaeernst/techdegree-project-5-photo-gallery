@@ -1,4 +1,23 @@
 baguetteBox.run('.container');
 
-const search = new Filter('search', 'data-caption');
+const search = document.querySelector('#search');
+const imgBoxes = document.querySelectorAll('.img-col a');
+
+const handleSearch = event => {
+    const searchTerm = event.target.value.toLowerCase();
+
+    imgBoxes.forEach(imgBox => {
+        const text = imgBox.textContent.toLowerCase();
+        const box = imgBox.parentElement;
+
+        if(text.includes(searchTerm)) {
+            box.style.display = "block";
+        } else {
+            box.style.display = "none";
+        }
+
+    });
+}
+
+search.addEventListener('keyup', handleSearch);
 
