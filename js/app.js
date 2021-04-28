@@ -1,7 +1,7 @@
 baguetteBox.run('.container');
 
 const search = document.querySelector('#search');
-const imgBoxes = document.querySelectorAll('.img-col a');
+const imgBoxes = document.querySelectorAll('.container a');
 
 const handleSearch = event => {
     const searchTerm = event.target.value.toLowerCase();
