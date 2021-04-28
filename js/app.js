@@ -20,5 +20,5 @@ const handleSearch = event => {
 }
 
 search.addEventListener('keyup', handleSearch);
-search.addEventListener('search', handleSearch);
+search.addEventListener('search', handleSearch); // clearing the search field resets the gallery
 
