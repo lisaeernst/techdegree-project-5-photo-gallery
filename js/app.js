@@ -20,4 +20,5 @@ const handleSearch = event => {
 }
 
 search.addEventListener('keyup', handleSearch);
+search.addEventListener('search', handleSearch);
 
