@@ -7,7 +7,7 @@ const handleSearch = event => {
     const searchTerm = event.target.value.toLowerCase();
 
     imgBoxes.forEach(imgBox => {
-        const text = imgBox.textContent.toLowerCase();
+        const text = imgBox.getAttribute("data-caption").toLowerCase();
         const box = imgBox.parentElement;
 
         if(text.includes(searchTerm)) {
