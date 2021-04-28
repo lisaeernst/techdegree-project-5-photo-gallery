@@ -17,7 +17,7 @@ const handleSearch = event => {
         }
 
     });
-}
+};
 
 search.addEventListener('keyup', handleSearch);
 search.addEventListener('search', handleSearch); // clearing the search field using the X resets the gallery
